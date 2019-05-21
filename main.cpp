@@ -9,8 +9,8 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     DataBaseController *base = new DataBaseController;
     base->inicarBancoDeDados();
-    base->novoProduto("Executivo de porco","30.50","1","executivos");
-    base->novoProduto("Executivo de Galeto","30.50","1","executivos");
+    //base->novoProduto("Executivo de porco","30.50","1","executivos");
+   // base->novoProduto("Executivo de Galeto","30.50","1","executivos");
     SqlModel sqlModel;
     sqlModel.setQuery(sqlModel.SQL_SELECT);
     QQmlApplicationEngine engine;

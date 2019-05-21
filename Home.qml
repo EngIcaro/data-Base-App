@@ -185,7 +185,32 @@ Item {
             width: parent.width*0.85
             height: parent.height*0.1
             color: "#041B3B"
+            TabBar{
+                id: bat
+                anchors.fill: parent
+                background: Rectangle{
+                    color:"transparent"
+                    height: parent.height
+                }
 
+                TabButton{
+                    text: qsTr("Mudar Tabela")
+                    height: bat.height
+//                    background: Rectangle{
+//                        height: recAttribute.height
+//                        color: "transparent"
+//                    }
+
+                }
+                TabButton{
+                    text: qsTr("Adicionar Produto")
+
+                }
+                TabButton{
+                    text: qsTr("Remover Produto")
+
+                }
+            }
 
         }
         Rectangle{
